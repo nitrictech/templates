@@ -1,0 +1,3 @@
+templates:
+  - name: Hello World Typescript
+    path: ./templates/hello-world-ts
