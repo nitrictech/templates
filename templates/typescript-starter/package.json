@@ -1,7 +1,7 @@
 {
-  "name": "hello-world-ts",
+  "name": "typescript-starter",
   "version": "1.0.0",
-  "description": "nitric typescript hello world template",
+  "description": "nitric typescript starter template",
   "main": "index.js",
   "private": true,
   "dependencies": {
