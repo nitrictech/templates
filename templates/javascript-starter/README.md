@@ -1,4 +1,4 @@
-# TypeScript Starter
+# Javascript Starter
 
 ## Testing your app locally
 
