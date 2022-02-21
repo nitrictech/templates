@@ -1,0 +1,3 @@
+templates:
+  - name: TypeScript - Starter
+    path: ./templates/typescript-starter
