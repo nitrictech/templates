@@ -1,4 +1,4 @@
-# Typescript Hello World
+# TypeScript Hello World
 
 ## Testing your app locally
 

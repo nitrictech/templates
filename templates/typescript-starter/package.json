@@ -5,6 +5,6 @@
   "main": "index.js",
   "private": true,
   "dependencies": {
-    "@nitric/sdk": "^0.3.0"
+    "@nitric/sdk": "latest"
   }
 }
