@@ -5,7 +5,7 @@ const helloApi = api('main');
 helloApi.get("/hello/:name", async (ctx) => {
     const { name } = ctx.req.params;
 
-    ctx.res.body = `Bye ${name}`;
+    ctx.res.body = `Hello ${name}`;
 
     return ctx;
 });

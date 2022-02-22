@@ -1,7 +1,7 @@
 {
   "name": "javascript-starter",
   "version": "1.0.0",
-  "description": "nitric javscript starter template",
+  "description": "nitric javascript starter template",
   "main": "index.js",
   "private": true,
   "dependencies": {
