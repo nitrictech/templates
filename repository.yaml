@@ -1,3 +1,5 @@
 templates:
   - name: TypeScript - Starter
     path: ./templates/typescript-starter
+  - name: JavaScript - Starter
+    path: ./templates/javscript-starter
