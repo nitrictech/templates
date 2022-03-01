@@ -4,6 +4,7 @@
   "description": "nitric javascript starter template",
   "main": "index.js",
   "private": true,
+  "type": "module",
   "dependencies": {
     "@nitric/sdk": "latest"
   }
