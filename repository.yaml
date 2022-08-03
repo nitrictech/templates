@@ -3,3 +3,5 @@ templates:
     path: ./typescript-starter
   - name: JavaScript - Starter
     path: ./javascript-starter
+  - name: Python - Starter (unstable)
+    path: ./python-starter
