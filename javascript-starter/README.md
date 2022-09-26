@@ -30,5 +30,5 @@ To run this project you'll need the [Nitric CLI](https://nitric.io/docs/installa
 npm install
 
 # run locally
-nitric run
+npm run dev
 ```

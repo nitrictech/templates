@@ -32,5 +32,5 @@ You'll also want to make sure the project's required dependencies have been inst
 npm install
 
 # run locally
-nitric run
+npm run dev
 ```
