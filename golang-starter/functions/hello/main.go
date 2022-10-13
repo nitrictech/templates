@@ -30,6 +30,7 @@ func main() {
 		return next(ctx)
 	})
 
+	fmt.Println("running main API")
 	if err := resources.Run(); err != nil {
 		fmt.Println(err)
 	}

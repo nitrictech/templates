@@ -25,7 +25,12 @@ If you'd rather chat with the maintainers or community, come and join our [Disco
 
 To run this project you'll need the [Nitric CLI](https://nitric.io/docs/installation) installed, then you can use the CLI commands to run, build or deploy the project.
 
+In one terminal
 ```bash
-# run locally
-nitric run
+nitric start
+```
+
+In another terminal
+```bash
+go run ./functions/hello
 ```
