@@ -3,3 +3,5 @@ templates:
     path: ./typescript-starter
   - name: JavaScript - Starter
     path: ./javascript-starter
+  - name: Golang - Starter
+    path: ./golang-starter
