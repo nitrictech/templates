@@ -25,12 +25,22 @@ If you'd rather chat with the maintainers or community, come and join our [Disco
 
 To run this project you'll need the [Nitric CLI](https://nitric.io/docs/installation) installed, then you can use the CLI commands to run, build or deploy the project.
 
+Start nitric services in a separate terminal
+
+```bash
+nitric start
+```
+
 You'll also want to make sure the project's required dependencies have been installed.
 
 ```bash
-# install dependencies
-pip install
-
-# run locally
-nitric run
+pipenv install
 ```
+
+Then you can run your project, this will automatically restart when you make changes to your functions
+
+```bash
+pipenv run dev
+```
+
+You'll see your services connect in your nitric start terminal.
