@@ -34,7 +34,7 @@ nitric start
 You'll also want to make sure the project's required dependencies have been installed.
 
 ```bash
-pipenv install
+pipenv install --dev
 ```
 
 Then you can run your project, this will automatically restart when you make changes to your functions
