@@ -1,0 +1,3 @@
+name: csharp-starter
+handlers:
+  - functions/*.cs

@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net7.0</TargetFramework>
+    <RootNamespace>Hello</RootNamespace>    
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Nitric.Sdk" Version="0.8.1" />
+  </ItemGroup>
+</Project>
