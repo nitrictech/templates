@@ -7,5 +7,15 @@
   "type": "module",
   "dependencies": {
     "@nitric/sdk": "latest"
+  },
+  "devDependencies": {
+    "dotenv": "^16.0.2",
+    "nodemon": "^2.0.20",
+    "stmux": "^1.8.4",
+    "wait-port": "^1.0.1"
+  },
+  "scripts": {
+    "dev:functions": "nodemon -r dotenv/config ./functions/*.js",
+    "dev": "stmux -w always -e ERROR -M -m beep,system -- [ \"nitric start\" .. \"wait-port localhost:50051 && npm run dev:functions\" ]"
   }
 }
