@@ -7,6 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Nitric.Sdk" Version="0.8.1" />
+    <PackageReference Include="Nitric.Sdk" Version="0.10.5" />
   </ItemGroup>
 </Project>
