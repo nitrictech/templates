@@ -3,5 +3,7 @@ templates:
     path: ./typescript-starter
   - name: JavaScript - Starter
     path: ./javascript-starter
-  - name: Python - Starter (preview)
+  - name: Python - Starter
     path: ./python-starter
+  - name: C# - Starter (experimental)
+    path: ./csharp-starter
