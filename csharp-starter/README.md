@@ -37,12 +37,13 @@ Next, start nitric services.
 nitric start
 ```
 
-In another terminal, run your project.
+In another terminal, run your functions.
 
 > This will automatically restart when you make changes to your functions
 
 ```bash
-dotnet run
+# example - run the 'hello' function
+dotnet run --project functions/hello.csproj
 ```
 
-You'll see your services connect in your nitric start terminal.
+You'll see your services connect in your `nitric start` terminal.
