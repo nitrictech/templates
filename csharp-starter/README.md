@@ -1,6 +1,6 @@
 <p align="center"><a href="https://nitric.io" target="_blank"><img src="https://raw.githubusercontent.com/nitrictech/nitric/main/docs/assets/nitric-logo.svg" height="120"></a></p>
 
-> The Nitric C# SDK is currently experimental and subject change. We don't recommend using it for production systems, feedback is welcome.
+> The Nitric C# SDK is currently experimental and subject to change. We don't recommend using it for production systems, feedback is welcome.
 
 ## About Nitric
 
