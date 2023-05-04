@@ -12,7 +12,10 @@ functions = glob.glob("functions/*.py")
 
 def main():
     for func in functions:
-        p = subprocess.Popen(['python',func])
+        python_exec = "python"
+        if os.environ.get("OS") == "Windows_NT":
+            python_exec = f"{os.environ.get('VIRTUAL_ENV')}/Scripts/python.exe"
+        p = subprocess.Popen([python_exec,func])
         processes.append((p))
 
     for p in processes:
