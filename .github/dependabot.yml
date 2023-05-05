@@ -10,15 +10,24 @@ updates:
     schedule:
       interval: "daily"
     versioning-strategy: increase
+    allow:
+      # Allow updates for nitric
+      - dependency-name: "@nitric/*"
 
   - package-ecosystem: "npm"
     directory: "/typescript-starter"
     schedule:
       interval: "daily"
     versioning-strategy: increase
+    allow:
+      # Allow updates for nitric
+      - dependency-name: "@nitric/*"
 
   - package-ecosystem: "pip"
     directory: "/python-starter"
     schedule:
       interval: "daily"
     versioning-strategy: increase
+    allow:
+      # Allow updates for nitric
+      - dependency-name: "nitric"
