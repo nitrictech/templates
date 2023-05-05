@@ -8,7 +8,7 @@
     "@nitric/sdk": "0.10.0"
   },
   "devDependencies": {
-    "dotenv": "^16.0.2",
+    "dotenv": "^16.0.3",
     "nodemon": "^2.0.20",
     "stmux": "^1.8.4",
     "ts-node": "^10.9.1",
