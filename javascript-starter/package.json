@@ -10,7 +10,7 @@
   },
   "devDependencies": {
     "dotenv": "^16.0.2",
-    "nodemon": "^2.0.20",
+    "nodemon": "^2.0.22",
     "stmux": "^1.8.4",
     "wait-port": "^1.0.1"
   },
