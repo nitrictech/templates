@@ -11,7 +11,7 @@
   "devDependencies": {
     "dotenv": "^16.0.2",
     "nodemon": "^2.0.20",
-    "stmux": "^1.8.4",
+    "stmux": "^1.8.7",
     "wait-port": "^1.0.1"
   },
   "scripts": {
