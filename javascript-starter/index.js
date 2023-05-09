@@ -18,6 +18,6 @@ config.handlers.forEach((handlerGlob) => {
   files
     .filter((file) => file.slice(-3) === ".js")
     .forEach((file) => {
-      import(`./${file}`);
+      import(`${file}`);
     });
 });

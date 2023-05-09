@@ -15,6 +15,6 @@ config.handlers.forEach((handlerGlob: string) => {
   files
     .filter((file) => file.slice(-3) === ".ts")
     .forEach((file) => {
-      import(`./${file}`);
+      import(`${file}`);
     });
 });
