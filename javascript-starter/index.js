@@ -2,7 +2,7 @@
 import fs from "fs";
 import yaml from "js-yaml";
 import { globSync } from "glob";
-import { dirname } from "path";
+import { dirname, relative } from "path";
 import { fileURLToPath } from "url";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
@@ -14,10 +14,10 @@ if (!config.handlers) {
 }
 
 config.handlers.forEach((handlerGlob) => {
-  const files = globSync(`${__dirname}/${handlerGlob}`);
+  const files = globSync(`${__dirname}/${handlerGlob}`, { absolute: true });
   files
     .filter((file) => file.slice(-3) === ".js")
     .forEach((file) => {
-      import(`./${file}`);
+      import(`./${relative('.', file)}`);
     });
 });
