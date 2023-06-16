@@ -11,11 +11,13 @@ if (!config.handlers) {
   throw new Error("Handlers not defined in config file");
 }
 
-config.handlers.forEach((handlerGlob: string) => {
+config.handlers.forEach((handler: string | object) => {
+  const handlerGlob = handler instanceof Object ? handler["match"] : handler;
+
   const files = globSync(`${__dirname}/${handlerGlob}`, { absolute: true });
   files
     .filter((file) => file.slice(-3) === ".ts")
     .forEach((file) => {
-      import(`./${relative('.', file)}`);
+      import(`./${relative(".", file)}`);
     });
 });

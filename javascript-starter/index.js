@@ -13,11 +13,13 @@ if (!config.handlers) {
   throw new Error("Handlers not defined in config file");
 }
 
-config.handlers.forEach((handlerGlob) => {
+config.handlers.forEach((handler) => {
+  const handlerGlob = handler instanceof Object ? handler["match"] : handler;
+
   const files = globSync(`${__dirname}/${handlerGlob}`, { absolute: true });
   files
     .filter((file) => file.slice(-3) === ".js")
     .forEach((file) => {
-      import(`./${relative('.', file)}`);
+      import(`./${relative(".", file)}`);
     });
 });
