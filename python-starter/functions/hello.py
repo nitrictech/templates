@@ -2,10 +2,10 @@ from nitric.resources import api
 from nitric.application import Nitric
 from nitric.faas import HttpContext
 
-helloApi = api("main")
+main_api = api("main")
 
 
-@helloApi.get("/hello/:name")
+@main_api.get("/hello/:name")
 async def hello_world(ctx: HttpContext):
     name = ctx.req.params['name']
 
