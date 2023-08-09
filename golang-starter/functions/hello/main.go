@@ -4,11 +4,11 @@ import (
 	"fmt"
 
 	"github.com/nitrictech/go-sdk/faas"
-	"github.com/nitrictech/go-sdk/resources"
+	"github.com/nitrictech/go-sdk/nitric"
 )
 
 func main() {
-	mainApi, err := resources.NewApi("main")
+	mainApi, err := nitric.NewApi("main")
 	if err != nil {
 		fmt.Println(err)
 		return
@@ -29,7 +29,7 @@ func main() {
 	})
 
 	fmt.Println("running main API")
-	if err := resources.Run(); err != nil {
+	if err := nitric.Run(); err != nil {
 		fmt.Println(err)
 	}
 }
