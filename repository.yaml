@@ -5,5 +5,7 @@ templates:
     path: ./javascript-starter
   - name: Python - Starter
     path: ./python-starter
+  - name: Go - Starter (experimental)
+    path: ./golang-starter
   - name: C# - Starter (experimental)
     path: ./csharp-starter
