@@ -7,7 +7,7 @@ fun main() {
     api.get("/goodbye/:name") { ctx ->
         val name = ctx.req.params["name"]
 
-        ctx.resp.text("hello $name")
+        ctx.resp.text("goodbye $name")
 
         ctx
     }
