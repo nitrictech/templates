@@ -9,3 +9,7 @@ templates:
     path: ./golang-starter
   - name: C# - Starter (experimental)
     path: ./csharp-starter
+  - name: Java - Starter (experimental)
+    path: ./java-starter
+  - name: Kotlin - Starter (experimental)
+    path: ./kotlin-starter
