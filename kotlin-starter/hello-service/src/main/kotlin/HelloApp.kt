@@ -1,7 +1,8 @@
 import io.nitric.Nitric
+import io.nitric.common.PublicApi
 
 fun main() {
-    val api = Nitric.api("api")
+    val api = PublicApi()
 
     api.get("/hello/:name") { ctx ->
         val name = ctx.req.params["name"]
@@ -10,5 +11,6 @@ fun main() {
 
         ctx
     }
+
     Nitric.run()
 }
