@@ -38,5 +38,5 @@ tasks.shadowJar {
 
 
 application {
-    mainClass.set("GoodbyeAppKt")
+    mainClass.set("HelloAppKt")
 }
