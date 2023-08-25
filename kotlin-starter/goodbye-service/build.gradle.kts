@@ -2,8 +2,11 @@ import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
     kotlin("jvm") version "1.8.21"
+    id("com.github.johnrengelman.shadow") version "7.0.0"
     application
 }
+
+project.setProperty("mainClassName", "GoodbyeAppKt")
 
 group = "org.example"
 version = "1.0"
@@ -28,6 +31,11 @@ tasks.test {
 tasks.withType<KotlinCompile> {
     kotlinOptions.jvmTarget = "1.8"
 }
+
+tasks.shadowJar {
+    mergeServiceFiles()
+}
+
 
 application {
     mainClass.set("GoodbyeAppKt")
