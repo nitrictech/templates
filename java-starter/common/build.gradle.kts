@@ -1,9 +1,9 @@
 plugins {
-    id 'java'
+    id("java")
 }
 
-group 'org.example'
-version '1.0-SNAPSHOT'
+group = "org.example"
+version = "1.0-SNAPSHOT"
 
 repositories {
     mavenCentral()
@@ -14,10 +14,8 @@ repositories {
 
 dependencies {
     implementation("com.github.nitrictech:jvm-sdk:infrastructure-from-code-SNAPSHOT")
-    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
-    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
 }
 
-test {
+tasks.test {
     useJUnitPlatform()
 }
