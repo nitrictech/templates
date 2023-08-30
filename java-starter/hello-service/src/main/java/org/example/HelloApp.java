@@ -6,10 +6,10 @@ public class HelloApp {
     public static void main(String[] args) {
         var app = Apis.publicApi();
 
-        app.get("/goodbye/:name", (ctx) -> {
+        app.get("/hello/:name", (ctx) -> {
             var name = ctx.getReq().getParams().getOrDefault("name", "world");
 
-            ctx.getResp().text(String.format("Goodbye %s!", name));
+            ctx.getResp().text(String.format("Hello %s!", name));
 
             return ctx;
         });

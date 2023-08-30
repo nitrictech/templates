@@ -17,7 +17,7 @@ repositories {
 }
 
 dependencies {
-    implementation("com.github.nitrictech:jvm-sdk:infrastructure-from-code-SNAPSHOT")
+    implementation("com.github.nitrictech:jvm-sdk")
     implementation(project(":common"))
 }
 

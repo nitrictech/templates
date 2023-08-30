@@ -17,7 +17,7 @@ repositories {
 }
 
 dependencies {
-    implementation("com.github.nitrictech:jvm-sdk:infrastructure-from-code-SNAPSHOT")
+    implementation("com.github.nitrictech:jvm-sdk")
     implementation(project(":common"))
 }
 
@@ -34,5 +34,5 @@ tasks.shadowJar {
 }
 
 application {
-    mainClass.set("org.example.GoodbyeAppKt")
+    mainClass.set("org.example.GoodbyeApp")
 }
