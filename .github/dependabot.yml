@@ -38,3 +38,19 @@ updates:
       interval: "daily"
     allow:
       - dependency-name: "github.com/nitrictech/go-sdk"
+
+  - package-ecosystem: "gradle"
+    directory: "/java-starter"
+    schedule:
+      interval: "daily"
+    allow:
+      # Allow updates for nitric
+      - dependency-name: "com.github.nitrictech:jvm-sdk"
+
+  - package-ecosystem: "gradle"
+    directory: "/kotlin-starter"
+    schedule:
+      interval: "daily"
+    allow:
+      # Allow updates for nitric
+      - dependency-name: "com.github.nitrictech:jvm-sdk"
