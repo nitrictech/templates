@@ -6,9 +6,6 @@ plugins {
 
 project.setProperty("mainClassName", "org.example.HelloApp")
 
-group = "org.example"
-version = "1.0"
-
 repositories {
     mavenCentral()
     maven {

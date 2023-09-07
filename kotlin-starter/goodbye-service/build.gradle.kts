@@ -1,15 +1,12 @@
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
-    kotlin("jvm") version "1.8.21"
+    kotlin("jvm")
     id("com.github.johnrengelman.shadow") version "7.0.0"
     application
 }
 
 project.setProperty("mainClassName", "GoodbyeAppKt")
-
-group = "org.example"
-version = "1.0"
 
 repositories {
     mavenCentral()
