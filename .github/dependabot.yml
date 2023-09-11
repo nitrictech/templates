@@ -31,3 +31,10 @@ updates:
     allow:
       # Allow updates for nitric
       - dependency-name: "nitric"
+
+  - package-ecosystem: "gomod"
+    directory: "/golang-starter"
+    schedule:
+      interval: "daily"
+    allow:
+      - dependency-name: "github.com/nitrictech/go-sdk"
