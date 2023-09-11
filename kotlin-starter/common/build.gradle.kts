@@ -1,5 +1,7 @@
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
+val nitricVersion: String by rootProject.extra
+
 plugins {
     kotlin("jvm")
 }
@@ -12,7 +14,7 @@ repositories {
 }
 
 dependencies {
-    implementation("com.github.nitrictech:jvm-sdk:v0.1.1")
+    implementation("com.github.nitrictech:jvm-sdk:$nitricVersion")
     testImplementation(kotlin("test"))
 }
 
