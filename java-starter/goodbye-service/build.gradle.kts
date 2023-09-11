@@ -4,6 +4,8 @@ plugins {
     application
 }
 
+val nitricVersion: String by rootProject.extra
+
 project.setProperty("mainClassName", "org.example.GoodbyeApp")
 
 repositories {
@@ -14,7 +16,7 @@ repositories {
 }
 
 dependencies {
-    implementation("com.github.nitrictech:jvm-sdk:v0.1.1")
+    implementation("com.github.nitrictech:jvm-sdk:$nitricVersion")
     implementation(project(":common"))
 }
 

@@ -2,6 +2,8 @@ plugins {
     id("java")
 }
 
+val nitricVersion: String by rootProject.extra
+
 repositories {
     mavenCentral()
     maven {
@@ -10,7 +12,7 @@ repositories {
 }
 
 dependencies {
-    implementation("com.github.nitrictech:jvm-sdk:v0.1.1")
+    implementation("com.github.nitrictech:jvm-sdk:$nitricVersion")
 }
 
 tasks.test {
