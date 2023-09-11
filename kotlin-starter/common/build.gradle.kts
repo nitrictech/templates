@@ -12,7 +12,7 @@ repositories {
 }
 
 dependencies {
-    implementation("com.github.nitrictech:jvm-sdk:v0.1.0")
+    implementation("com.github.nitrictech:jvm-sdk:v0.1.1")
     testImplementation(kotlin("test"))
 }
 
