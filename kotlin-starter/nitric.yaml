@@ -1,0 +1,3 @@
+name: kotlin-starter
+handlers:
+  - "./*-service/build/libs/*-all.jar"
