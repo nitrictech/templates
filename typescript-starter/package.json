@@ -4,6 +4,9 @@
   "description": "nitric typescript starter template",
   "main": "index.js",
   "private": true,
+  "resolutions": {
+    "**/node-pty": "1.1.0-beta5"
+  },
   "dependencies": {
     "@nitric/sdk": "0.15.0"
   },
@@ -19,7 +22,6 @@
     "wait-port": "^1.0.1"
   },
   "scripts": {
-    "preinstall": "npm install -g node-gyp",
     "dev:functions": "nodemon -r dotenv/config ./index.ts",
     "dev": "stmux -w always -e ERROR -M -m beep,system -- [ -t 'Nitric: Exit using ctrl^a+k' \"nitric start\" .. -t 'Functions' \"wait-port localhost:50051 && npm run dev:functions\" ]"
   }
