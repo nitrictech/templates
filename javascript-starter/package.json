@@ -8,8 +8,8 @@
   "dependencies": {
     "@nitric/sdk": "0.16.0"
   },
-  "resolutions": {
-    "**/node-pty": "1.1.0-beta5"
+  "engines": {
+    "node": ">=20.0.0"
   },
   "devDependencies": {
     "dotenv": "^16.0.2",
