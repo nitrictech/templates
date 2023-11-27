@@ -8,7 +8,7 @@
     "node": ">=20.0.0"
   },
   "dependencies": {
-    "@nitric/sdk": "0.16.0"
+    "@nitric/sdk": "0.16.1"
   },
   "devDependencies": {
     "@types/js-yaml": "^4.0.5",
