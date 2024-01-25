@@ -1,3 +1,4 @@
 name: golang-starter
-handlers:
-- functions/*/*.go
+services:
+  - match: services/*/*.go
+    start: go run {{filename}}

@@ -20,7 +20,7 @@
     "wait-port": "^1.0.1"
   },
   "scripts": {
-    "dev:functions": "nodemon -r dotenv/config ./index.js",
-    "dev": "stmux -w always -e ERROR -M -m beep,system -- [ -t 'Nitric: Exit using ctrl^a+k' \"nitric start\" .. \"wait-port localhost:50051 && npm run dev:functions\" ]"
+    "dev:services": "nodemon -r dotenv/config ./index.js",
+    "dev": "stmux -w always -e ERROR -M -m beep,system -- [ -t 'Nitric: Exit using ctrl^a+k' \"nitric start\" .. \"wait-port localhost:50051 && npm run dev:services\" ]"
   }
 }

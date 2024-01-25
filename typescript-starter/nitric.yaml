@@ -1,3 +1,4 @@
 name: typescript-starter
-handlers:
-- functions/*.ts
+services:
+  - match: services/*.ts
+    start: yarn dev:services

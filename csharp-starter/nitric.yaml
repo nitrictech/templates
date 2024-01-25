@@ -1,3 +1,4 @@
 name: csharp-starter
-handlers:
-  - functions/*.cs
+services:
+  - match: services/*.cs
+    start: dotnet run {{filename}}
