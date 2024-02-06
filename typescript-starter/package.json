@@ -2,7 +2,6 @@
   "name": "typescript-starter",
   "version": "1.0.0",
   "description": "nitric typescript starter template",
-  "main": "index.js",
   "private": true,
   "engines": {
     "node": ">=20.0.0"
@@ -22,7 +21,6 @@
     "wait-port": "^1.0.1"
   },
   "scripts": {
-    "dev:services": "nodemon -r dotenv/config",
-    "dev": "stmux -w always -e ERROR -M -m beep,system -- [ -t 'Nitric: Exit using ctrl^a+k' \"nitric start\" .. -t 'Functions' \"wait-port localhost:50051 && npm run dev:services\" ]"
+    "dev:services": "nodemon -r dotenv/config"
   }
 }

@@ -1,4 +1,4 @@
 name: typescript-starter
 services:
   - match: services/*.ts
-    start: yarn dev:services
+    start: yarn dev:services %s
