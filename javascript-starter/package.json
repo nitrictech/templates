@@ -7,16 +7,9 @@
   "dependencies": {
     "@nitric/sdk": "0.16.2"
   },
-  "engines": {
-    "node": ">=20.0.0"
-  },
   "devDependencies": {
-    "dotenv": "^16.0.2",
-    "glob": "^10.2.2",
-    "js-yaml": "^4.1.0",
-    "nodemon": "^2.0.20",
-    "stmux": "^1.8.4",
-    "wait-port": "^1.0.1"
+    "dotenv": "^16.4.1",
+    "nodemon": "^3.0.3"
   },
   "scripts": {
     "dev:services": "nodemon -r dotenv/config"
