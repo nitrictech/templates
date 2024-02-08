@@ -1,4 +1,4 @@
 name: javascript-starter
 services:
   - match: ./services/*.js
-    start: yarn dev:services %s
+    start: yarn dev:services $SERVICE_PATH
