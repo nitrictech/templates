@@ -2,6 +2,8 @@
 
 ## Nitric Templates
 
+> 🚧 This is the template repo for nitric v0, for v1 templates see our [examples repo](https://github.com/nitrictech/examples) 🚧
+
 This is the Nitric Templates repository, it contains starter project templates in a variety of languages supported by the Nitric Framework. 
 
 When using the `nitric new` command to start a new project these templates are presented as options to build your app.
