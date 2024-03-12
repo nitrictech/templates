@@ -1,3 +1,4 @@
 name: javascript-starter
-handlers:
-- functions/*.js
+services:
+  - match: ./services/*.js
+    start: yarn dev:services $SERVICE_PATH

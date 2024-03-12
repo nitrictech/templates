@@ -1,3 +1,4 @@
 name: kotlin-starter
-handlers:
-  - "./*-service/build/libs/*-all.jar"
+services:
+  - match: "./*-service/build/libs/*-all.jar"
+    start: java -jar {{services}}

@@ -1,3 +1,4 @@
 name: python-starter
-handlers:
-- functions/*.py
+services:
+  - match: services/*.py
+    start: pipenv run dev %s
